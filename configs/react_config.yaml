@@ -1,0 +1,51 @@
+# general
+format: react
+parser_tag: ["Action:"]
+output_dir: eval_results
+debug: false
+log_level: INFO
+save_dir: ./samples
+
+# sample
+## MCTS
+version: mcts
+image_size:
+- 300
+- 300
+mcts:
+  depth_limit: 30
+  exploration_weight: 1.0
+  n_iterations: 30
+  num_proposed_action: 5
+  enable_reflection: false
+sort_action: false
+num: 128
+visual_perception: false
+wo_image_tool_result: false
+max_valid_data: 512
+max_steps: 50
+
+
+## env
+enable_alfworld_env: true
+dataset_root: /media/data/benchmark1_0_release
+num_threads: 8
+thread_agent_mode: true
+visual_som: false
+
+# decoding args
+model: Qwen2_5-VL-72B-Instruct
+model_name: null
+base_url: null
+temperature: 1.0
+top_p: 0.95
+repetition_penalty: 1.05
+max_tokens: 1024
+
+## eval
+split: train # train/dev/test
+num_games: 3553  # 3553/140/134 for train/dev/test
+max_workers: 1
+repeats: 1
+save_intermediate: false
+timeout: null

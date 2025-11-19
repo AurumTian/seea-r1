@@ -1,0 +1,12 @@
+env_path: '$EMBODIED_EVAL_ROOT/data/envs'
+action_mode: 1
+camera_resolution_width: 448
+camera_resolution_height: 448
+camera_field_of_view: 90
+run_options:
+port: 50051
+width: 768
+height: 768
+use_video: False
+use_default_light: 1
+style: 0
