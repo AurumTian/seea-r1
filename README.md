@@ -364,13 +364,17 @@ Using screen can continue running processes even after disconnecting. The follow
    ./seea/train/run_pipeline.sh GRPO lora /media/users/name/models/Qwen/Qwen2.5-VL-7B-Instruct
     ```
 
-### Train Based on World Model (TODO)
-### Mixed Environment Sampling (TODO)
-
-## Code Merge
-Merge request through merge request into master or dev, do not directly push
 
 
+## Citation
 
-## TODO
-- Enable CICD, Open Integrated Test
+If you find this work useful, please cite:
+
+```bibtex
+@article{tian2025seea,
+  title={SEEA-R1: Tree-Structured Reinforcement Fine-Tuning for Self-Evolving Embodied Agents},
+  author={Tian, Wanxin and Zhang, Shijie and Zhang, Kevin and Chi, Xiaowei and Fan, Chunkai and Lu, Junyu and Luo, Yulin and Zhou, Qiang and Zhao, Yiming and Liu, Ning and others},
+  journal={arXiv preprint arXiv:2506.21669},
+  year={2025}
+}
+```
